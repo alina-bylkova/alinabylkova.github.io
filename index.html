@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alina Bylkova</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <!--Font Awesome-->
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <!--Bootstrap buttons-->
+      <nav>
+        <ul id="navigation">
+          <li>
+            <button id="homeBtn" type="button" class="btn btn-outline-light btn-lg">Home</button>
+          </li>
+          <li>
+            <button id="aboutBtn" type="button" class="btn btn-outline-light btn-lg">
+              About Me
+            </button>
+          </li>
+          <li>
+            <button id="myWorkBtn" type="button" class="btn btn-outline-light btn-lg">
+              My Work
+            </button>
+          </li>
+          <li>
+            <button id="contactMeBtn" type="button" class="btn btn-outline-light btn-lg">
+              Contact Me
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <h1>
+          Alina <br />
+          Bylkova
+        </h1>
+        <h2>Web developer</h2>
+        <!--1png, 1webp, 2png, 3jpg, 4jpg, 5jpg, 6jpg, 7jpg-->
+        <img src="./Profile picture/profile_picture (4).jpg" alt="Profile picture" />
+      </section>
+      <section id="about">
+        <h1>About Me</h1>
+        <p>
+          Hi! I’m <span>Alina Bylkova</span> and I’m a <span>web developer</span> working and living
+          in beautiful Oslo. <br /><br />
+          Creating and developing things for the Internet is my greatest passion. I strive to build
+          immersive and beautiful web sites through carefully crafted code and user-centric design.
+          I’m obsessed with coding things from scratch, and enjoy bringing ideas to life in the
+          browser. I always prefer to keep learning, continue challenging myself, find new
+          opportunities in web development, and do things that matter. <br /><br />
+          Apart from coding,
+          <span
+            >I enjoy playing board games, listening synthwave music and watching cyberpunk
+            movies</span
+          >. Denis Villeneuve and Robert Anthony Rodriguez have made some of my most favorite films
+          and their creativity is an inspiration for me. I love to travel and also enjoy skiing.
+          <br /><br />
+          If you wish to get in touch, <a id="contactLink">contact me here!</a>
+          <!--Add a link to contact section-->
+        </p>
+      </section>
+      <section id="myWork">
+        <div class="description">
+          <h1 class="description">My Work</h1>
+          <p class="description">
+            I like to design and code beautifully simple things, and I love what I do. I’m a web
+            developer who specializes in design-oriented front-end development but who has a
+            background in fullstack. I’m a fast learner, able to pick up new skills and juggle
+            different projects and roles with relative ease. I like to develop expertise in a number
+            of areas over the course of my life and career.
+          </p>
+        </div>
+        <div class="grid">
+          <div id="gridHead">I have experience with the following tech and practices:</div>
+          <div class="firstColumn">Front-end:</div>
+          <div>HTML5 / CSS3 / JavaScript (ES6) / JQuery / Bootstrap</div>
+          <div class="firstColumn">Back-end:</div>
+          <div>Node.js / Databases / Bash</div>
+          <div class="firstColumn">CMS:</div>
+          <div>WordPress</div>
+        </div>
+        <div class="projects prHead">Recent Personal Projects</div>
+        <p>
+          In this section, you’ll find some of my newer projects and code examples that I’ve worked
+          on and wanted to display.
+        </p>
+        <div class="projects"></div>
+      </section>
+      <section id="contactMe" class="container-fluid">
+        <h1>Contact Me</h1>
+        <h2>Have a question? Please enquire below</h2>
+        <!--Bootstrap form-->
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group col-lg-3">
+              <input type="text" class="form-control form-control-lg" placeholder="Your Name" />
+            </div>
+            <div class="form-group col-lg-3">
+              <input type="email" class="form-control form-control-lg" placeholder="Your Email" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-lg-6">
+              <textarea
+                class="form-control form-control-lg"
+                rows="7"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-lg-6">
+              <button type="submit" class="btn btn-outline-light col-lg-3">Send</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="icon gitHub">
+        <a href="https://github.com/" title="GitHub" target="_blank"
+          ><i class="fab fa-github-square"></i
+        ></a>
+      </div>
+      <div class="icon linkedIn">
+        <a href="https://www.linkedin.com/in/alinabylkova/" title="LinkedIn" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+      <div class="icon email">
+        <a href="mailto:bylkova11@gmail.com" title="Email" target="_blank"
+          ><i class="far fa-envelope"></i
+        ></a>
+      </div>
+      <div class="copyright">Copyright &copy; 2019 Alina Bylkova | Web developer</div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
