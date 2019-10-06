@@ -14,10 +14,7 @@
 }
 
 body {
-  background-image: url('./pictures/background.jpg');
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: 1550px 800px;
+  background: url('./pictures/background.jpg') no-repeat center / cover;
 }
 
 #navigation {
@@ -113,23 +110,25 @@ span {
 }
 
 .description {
-  width: 700px;
+  max-width: 50%;
   float: left;
 }
 
 .grid {
   display: grid;
-  grid-template: 80px repeat(3, 60px) / 200px 580px;
+  grid-template: 80px repeat(3, 60px) / 1.5fr 5fr;
+  max-width: 50%;
   text-align: left;
   float: right;
 }
 
-.grid,
+/* .grid,
 #gridHead {
   grid-column: 1 / span 2;
-}
+} */
 
 #gridHead {
+  grid-column: 1 / span 2;
   font-family: goodTimes;
   color: #c7a599;
 }
