@@ -1,16 +1,16 @@
 @font-face {
   font-family: roadRage;
-  src: url(./fonts/indieground_road_rage/road_rage.otf);
+  src: url(./font/indieground_road_rage/road_rage.otf);
 }
 
 @font-face {
   font-family: goodTimes;
-  src: url(./fonts/good_times/good_times_rg.ttf);
+  src: url(./font/good_times/good_times_rg.ttf);
 }
 
 @font-face {
   font-family: neon80s;
-  src: url(./fonts/downlink/downlink.otf);
+  src: url(./font/downlink/downlink.otf);
 }
 
 body {
