@@ -10,23 +10,11 @@
 
 @font-face {
   font-family: neon80s;
-  /* src: url(./fonts/indieground_neon_80s/neon.ttf); */
-  /* src: url(./fonts/astron_boy/astron_boy.ttf); */
-  /* src: url(./fonts/aurach/aurach_bi.ttf); */
-  /* src: url(./fonts/invasion2000/invasion2000.TTF); */
-  /* src: url(./fonts/still_time/still_time.ttf); */
   src: url(./fonts/downlink/downlink.otf);
-  /* src: url(./fonts/mons_olympia/mons_olympia.otf); */
-  /* src: url(./fonts/neogrey/neogrey_regular.otf); */
-  /* src: url(./fonts/Elianto/Elianto/Elianto-Regular.otf); */
 }
 
 body {
-  /* background-image: url('background.jpg'); */
-  /* 2,5,8,9,11,12,13,16,21,23 */
-  /* 3,6,7,8,9,10,12,23 */
-  background-image: url('./galaxy background/background\ \(23\).jpg');
-  /* background-image: linear-gradient(to bottom, #770560, #1740d3); */
+  background-image: url('./pictures/background.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 1550px 800px;
