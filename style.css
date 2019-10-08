@@ -13,9 +13,29 @@
   src: url(./font/downlink/downlink.otf);
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background: url('./pictures/background.jpg') no-repeat center / cover;
   background-attachment: fixed;
+  min-height: 100%;
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  grid-template-rows: auto 1fr auto;
+  /* align-content: space-between; */
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
 }
 
 #navigation {
@@ -178,12 +198,13 @@ span {
 }
 
 #footer {
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
   font-family: roadRage;
   color: #ff37d8;
   text-align: center;
   width: 100%;
+  grid-area: footer;
 }
 
 .icon {
