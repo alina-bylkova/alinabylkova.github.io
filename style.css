@@ -36,6 +36,7 @@ header {
 
 main {
   grid-area: main;
+  margin: 0 30px;
 }
 
 #navigation {
@@ -81,13 +82,13 @@ main {
 #home img {
   padding-left: 80px;
   color: #ff37d8;
-  width: 450px;
+  width: 420px;
 }
 
 #about {
   color: #c7a599;
   font-size: 20px;
-  width: 1020px;
+  width: 70%;
   padding: 10px;
   background-color: rgb(34, 30, 89, 0.4);
   border-radius: 10px;
@@ -121,6 +122,12 @@ span {
   font-size: 20px;
   padding: 10px;
   font-family: neon80s;
+  display: grid;
+  grid-template-areas:
+    'description'
+    'grid'
+    'projects';
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 #myWork h1 {
@@ -131,22 +138,20 @@ span {
 }
 
 .description {
-  max-width: 50%;
-  float: left;
+  grid-area: description;
 }
 
 .grid {
   display: grid;
-  grid-template: 80px repeat(3, 60px) / 1.5fr 5fr;
-  max-width: 50%;
-  text-align: left;
-  float: right;
+  grid-template: repeat(4, 1fr) / 1.5fr 5fr;
+  grid-area: grid;
+  grid-gap: 10px;
 }
 
 #gridHead {
   grid-column: 1 / span 2;
   font-family: goodTimes;
-  color: #c7a599;
+  color: #ff37d8;
 }
 
 .firstColumn {
@@ -157,6 +162,7 @@ span {
 .projects {
   clear: both;
   padding-top: 40px;
+  grid-area: projects;
 }
 
 .prHead {
@@ -198,8 +204,6 @@ span {
 }
 
 #footer {
-  /* position: fixed;
-  bottom: 0; */
   font-family: roadRage;
   color: #ff37d8;
   text-align: center;
